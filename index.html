@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo-light.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm custom-navbar"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="index.html">
+          <img src="assets/images/logo-light.svg" class="img" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/services.html">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/pricing.html">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <a class="btn d-none d-md-block" href="pages/contact.html">Get Free Quote</a>
+        <button class="theme-toggler" type="button" aria-label="Switch to light theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6 col-12 hero-left">
+            <button class="btn btn-light mb-5">
+              <i class="fa-solid fa-circle-check mx-2"></i><b>Instant Quote</b>
+            </button>
+            <h1>Professional Cleaning,</h1>
+            <h1 class="heading-animated">Made Simple</h1>
+            <p class="mt-4">
+              Trusted by thousands of homeowners and businesses in Austin. Our
+              insured, background-checked cleaning professionals use
+              eco-friendly products to deliver a spotless space every single
+              time.
+            </p>
+            <div class="row g-4 mt-4">
+              <div class="col-sm-6 col-12">
+                <button class="btn btn-box-shadow px-4 w-100">
+                  Get Free Quote <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="col-sm-6 col-12">
+                <button class="btn btn-light rounded px-4 w-100">
+                  <i class="fa-solid fa-phone"></i> Call 0312 345678
+                </button>
+              </div>
+            </div>
+            <div class="row g-4 hero-counts mt-4">
+              <div class="col-6 col-sm-3">
+                <h4>5000+</h4>
+                <span>Homes Cleaned</span>
+              </div>
+              <div class="col-6 col-sm-3">
+                <h4>4.9+</h4>
+                <span>Star Rating</span>
+              </div>
+              <div class="col-6 col-sm-3">
+                <h4>100%</h4>
+                <span>Satisfaction</span>
+              </div>
+              <div class="col-6 col-sm-3">
+                <h4>200+</h4>
+                <span>5-Star Reviews</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 hero-form-container py-4 p-md-5">
+            <div>
+              <h4>Instant Quote</h4>
+              <span>Get your estimated price in seconds</span>
+              <form action="" class="hero-form my-3">
+                <label for="property-type">Property Type</label><br />
+                <select name="property-type" id="property-type">
+                  <option value="house">House</option>
+                  <option value="appartment">Appartment</option>
+                  <option value="condo">Condo</option>
+                  <option value="office">Office</option>
+                </select>
+                <div class="row g-4">
+                  <div class="col">
+                    <label for="property-size">Property Size</label>
+                  </div>
+                  <div
+                    class="col d-flex align-items-center justify-content-end"
+                  >
+                    <span class="d-flex justify-content-end align-items-center"
+                      ><h6 class="range-value">2500 sqft</h6></span
+                    >
+                  </div>
+                </div>
+                <input
+                  type="range"
+                  class="range-slider"
+                  name="property-size"
+                  id="property-size"
+                  min="500"
+                  max="5000"
+                  value="2500"
+                />
+                <div class="row g-4">
+                  <div class="col"><span>500 sqft</span></div>
+                  <div class="col">
+                    <span class="justify-content-center flex">2500 sqft</span>
+                  </div>
+                  <div class="col">
+                    <span class="justify-content-end flex">5000 sqft</span>
+                  </div>
+                </div>
+                <label for="rooms">Bedrooms</label><br />
+                <div class="row g-4 flex justify-content-center align-items-center">
+                    <div class="col-4 flex justify-content-center align-items-center "><button class="btn" id="btn-p">+</button></div>
+                <div class="col-4 flex justify-content-center align-items-center"><input type="number" name="" value="3" min="1" max="100" disabled="true" class="room-counts" id=""></div>
+                <div class="col-4 flex justify-content-center align-items-center"><button class="btn" id="btn-n">-</button></div>
+                </div>
+                <label for="frequency">Frequency</label><br />
+                <div class="row g-4 flex justify-content-space-evenly g-2">
+                  <div class="col-md-6 col-12">
+                    <button class="btn freq-btn w-100 h-100" data-value="1">One-Time</button>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <button class="btn freq-btn w-100 h-100" data-value="7">Weekly</button>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <button class="btn freq-btn w-100 h-100" data-value="30">Monthly</button>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <button class="btn freq-btn w-100 h-100" data-value="60">Bi-Monthly</button>
+                  </div>
+                </div>
+              </form>
+              <div
+                class="estimated-amount-container flex align-items-center justify-content-center"
+              >
+                <span>Estimated Price</span>
+                <h1 class="estimated-price">Rs. 363</h1>
+              </div>
+              <button class="btn w-100 my-3 py-2">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Trust/Benefits Section -->
+    <section class="container-dark pros py-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="icon-container">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h6>Fully Insured</h6>
+              <span
+                >Up to $2M liability coverage for complete peace of mind.</span
+              >
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="icon-container">
+                <i class="fa-solid fa-user-check"></i>
+              </div>
+              <h6>Background Checked</h6>
+              <span
+                >Every team member passes thorough background screening.</span
+              >
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="icon-container">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <h6>Eco-Friendly</h6>
+              <span
+                >Green-certified products safe for kids, pets, and the
+                planet.</span
+              >
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="icon-container">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </div>
+              <h6>Satisfaction Guaranteed</h6>
+              <span>Not happy? We'll re-clean for free within 24 hours.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Stats Section -->
+    <section class="service-counts py-5">
+      <div class="container">
+        <div class="text-animation">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h1>5000+</h1>
+              <span>Homes Cleaned</span>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h1>200+</h1>
+              <span>5-Star Reviews</span>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h1>8+</h1>
+              <span>Years Experience</span>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h1>100%</h1>
+              <span>Satisfaction Rate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-starting">
+          <button class="btn btn-light">Our Services</button>
+          <h2>Cleaning Services for Every Need</h2>
+          <p>
+            From weekly home cleanings to large-scale commercial projects, we
+            have the team and expertise to handle it all.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="icon-container">
+                <i class="fa-solid fa-house"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Regular Cleaning</h4>
+                <p class="card-text">
+                  Weekly, bi-weekly, or monthly visits to keep your home
+                  consistently fresh, tidy, and welcoming for your family.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="icon-container">
+                <i class="fa-solid fa-soap"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Deep Cleaning</h4>
+                <p class="card-text">
+                  An intensive top-to-bottom clean that reaches every corner,
+                  baseboard, and hidden surface for a like-new feeling.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="icon-container">
+                <i class="fa-solid fa-truck"></i>
+              </div>
+
+              <div class="card-body">
+                <h4 class="card-title">Move-In/Out Cleaning</h4>
+                <p class="card-text">
+                  Comprehensive cleaning before you settle in or after you move
+                  out, helping you get your full deposit back.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="icon-container">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Commercial Cleaning</h4>
+                <p class="card-text">
+                  Flexible office and retail cleaning schedules tailored to your
+                  business hours and specific requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="icon-container">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Post-Construction</h4>
+                <p class="card-text">
+                  Dust, debris, and residue removal after renovations or new
+                  construction, making your space move-in ready.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="icon-container">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Green Cleaning</h4>
+                <p class="card-text">
+                  100% eco-friendly products that are safe for children, pets,
+                  and the environment without sacrificing cleaning power.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-starting">
+          <button class="btn btn-light">Packages</button>
+          <h2>Cleaning Services for Every Need</h2>
+          <p>
+            From weekly home cleanings to large-scale commercial projects, we
+            have the team and expertise to handle it all.
+          </p>
+        </div>
+        <div class="row g-4 pricing-row g-4 g-2">
+          <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h4>Basic Clean</h4>
+                <span>Essential cleaning for maintained homes</span>
+                <h3>Rs. 999</h3>
+                <span>Starting at</span>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i>Dusting all surfaces</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Vacuuming & mopping</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Kitchen counters & sink</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Bathroom sanitization</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Trash removal</li>
+                </ul>
+                <button class="btn w-100">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card best-plan">
+              <div class="card-body">
+                <h4>Deep Clean</h4>
+                <span>Thorough top-to-bottom clean</span>
+                <h3>Rs. 1999</h3>
+                <span>Starting at</span>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i>Everything in Basic</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Inside appliances</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Baseboards & door frames</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Window sills & blinds</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Cabinet exteriors</li>
+                </ul>
+                <button class="btn w-100">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h4>Move-In/Out</h4>
+                <span>Complete property preparation</span>
+                <h3>Rs. 2999</h3>
+                <span>Starting at</span>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i>Everything in Deep Clean</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Inside cabinets & drawers</li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>Oven & refrigerator deep clean
+                  </li>
+                  <li><i class="fa-solid fa-circle-check"></i>Closet cleaning</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Garage sweep</li>
+                </ul>
+                <button class="btn w-100">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h4>Commercial</h4>
+                <span>Tailored to your business</span>
+                <h3>Custom</h3>
+                <span>Get a quote</span>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i>Custom cleaning schedule</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Floor care & polishing</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Restroom sanitization</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Break room deep clean</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Dedicated account manager</li>
+                </ul>
+                <button class="btn w-100">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Reviews/Testimonial Section -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-starting">
+          <button class="btn btn-light">Reviews</button>
+          <h2>What Our Clients Say</h2>
+          <p>
+            Hear from real clients about their experience with SparkleClean.
+          </p>
+        </div>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-12">
+                  <div class="card p-3 shadow-sm">
+                    <p>"Great service and amazing design quality."</p>
+                    <h6 class="mb-0">Ali Khan</h6>
+                    <small>Business Owner</small>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-12">
+                  <div class="card p-3 shadow-sm">
+                    <p>"Very professional and delivered on time."</p>
+                    <h6 class="mb-0">Sara Ahmed</h6>
+                    <small>Startup Founder</small>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-12">
+                  <div class="card p-3 shadow-sm">
+                    <p>"Highly recommended for web development."</p>
+                    <h6 class="mb-0">John Smith</h6>
+                    <small>Entrepreneur</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-lg-4 col-12">
+                  <div class="card p-3 shadow-sm">
+                    <p>"Amazing UI and smooth experience."</p>
+                    <h6 class="mb-0">Ahmed Raza</h6>
+                    <small>Developer</small>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                  <div class="card p-3 shadow-sm">
+                    <p>"Clean code and great communication."</p>
+                    <h6 class="mb-0">Usman Ali</h6>
+                    <small>Manager</small>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                  <div class="card p-3 shadow-sm">
+                    <p>"Delivered exactly what we wanted."</p>
+                    <h6 class="mb-0">Hina Noor</h6>
+                    <small>CEO</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Promotion CTA Section -->
+    <section class="promotion" id="promotion">
+      <div class="container">
+        <div class="section-starting">
+          <h2>Ready for a Spotless Space?</h2>
+          <p>
+            Book your cleaning today and experience the <strong>SparkleClean</strong> difference.
+            First-time customers get <b>20% off</b> their initial cleaning.
+          </p>
+        </div>
+        <div class="row g-4 d-flex justify-content-center">
+          <div class="col justify-content-center">
+            <button class="btn promotion-btn-1 mx-md-5">Get Free Quote<i><span class="fa-solid fa-arrow-right mx-2"></span></i></button>
+            <button class="btn promotion-btn-2 mx-md-5"><i><span class="fa-solid fa-phone mx-2"></span></i>Call 0312 3456789</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- FAQ Section -->
+    <section class="faqs" id="faqs">
+      <div class="container">
+        <div class="section-starting">
+          <button class="btn btn-light">FAQ</button>
+          <h2>Frequently Asked Questions</h2>
+          <p>Find answers to common questions about our cleaning services.</p>
+        </div>
+        <div
+          class="accordion accordion-flush accordion-custom"
+          id="accordionFlushExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                How long does a typical cleaning take?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                A standard cleaning for a 1,500 sq ft home typically takes 2-3
+                hours with a two-person team. Deep cleans may take 4-6 hours
+                depending on the condition and size of the space. We always
+                provide a time estimate before we begin.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                What cleaning products do you use?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                We use EPA-certified, eco-friendly cleaning products that are
+                safe for children, pets, and people with allergies. Our green
+                cleaning line is free from harsh chemicals, ammonia, and bleach
+                while still delivering professional-grade results.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                What is included in standard cleaning?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Our standard cleaning covers dusting all surfaces, vacuuming and
+                mopping floors, kitchen cleaning (counters, sink, stovetop,
+                exterior of appliances), bathroom sanitization (toilet, tub,
+                shower, sink, mirrors), and trash removal from all rooms.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Are you cleaners insured or bonded?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Our standard cleaning covers dusting all surfaces, vacuuming and
+                mopping floors, kitchen cleaning (counters, sink, stovetop,
+                exterior of appliances), bathroom sanitization (toilet, tub,
+                shower, sink, mirrors), and trash removal from all rooms.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Can I cancel or rescedule a cleaning?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Our standard cleaning covers dusting all surfaces, vacuuming and
+                mopping floors, kitchen cleaning (counters, sink, stovetop,
+                exterior of appliances), bathroom sanitization (toilet, tub,
+                shower, sink, mirrors), and trash removal from all rooms.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-starting">
+          <button class="btn btn-light">Contact</button>
+          <h2>Get in Touch</h2>
+          <p>
+            Ready for a cleaner space? Book your cleaning or ask us a question.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-lg-6 contact-form-col p-5">
+            <form action="" class="contact-form">
+              <div class="row g-4">
+                <div class="col">
+                  <label for="">Full Name</label><br />
+                  <input type="text" placeholder="Your Name" name="" id="" />
+                </div>
+                <div class="col">
+                  <label for="">Email Address</label><br />
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+              <div class="row g-4">
+                <div class="col">
+                  <label for="">Phone Number</label><br />
+                  <input
+                    type="text"
+                    placeholder="Your Contact Number"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="col">
+                  <label for="">Select Service Needed</label><br />
+                  <select name="" id="">
+                    <option value="select">Select a Service</option>
+                  </select>
+                </div>
+              </div>
+              <label for="">Preffered Date</label><br />
+              <input type="date" name="" id="" />
+              <br />
+              <label for="">Message</label><br />
+              <input type="text" placeholder="Message" name="" id="" /><br />
+              <button class="btn w-100 my-3">Request Cleaning</button>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6 contact-info-col">
+            <div class=" p-4 p-md-5">
+              <h4>Contact Information</h4>
+              <p class="mb-4">
+                Reach us directly for booking, questions, or custom cleaning plans.
+              </p>
+              <div class="row g-3 contact-info-list">
+                <div class="col-12">
+                  <div class="contact-info-item d-flex align-items-start">
+                    <span class="contact-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <div>
+                      <h6 class="mb-1">Phone</h6>
+                      <a href="tel:+923000000000">+92 300 0000000</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="contact-info-item d-flex align-items-start">
+                    <span class="contact-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <div>
+                      <h6 class="mb-1">Email</h6>
+                      <a href="mailto:hello@sparkleclean.com">hello@sparkleclean.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="contact-info-item d-flex align-items-start">
+                    <span class="contact-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <div>
+                      <h6 class="mb-1">Location</h6>
+                      <p class="mb-0">Main Boulevard, Gulberg, Lahore, Pakistan</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="container-fluid">
+      <span class="flex justify-content-center m-3">&copy; 2026 awaisdaud.com. All rights reserved.</span>
+    </div>
+    <!-- Vendor + Custom Scripts -->
+    <script src="css/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

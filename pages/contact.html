@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | SparkleClean</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo-light.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <img src="../assets/images/logo-light.svg" class="img" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn d-none d-md-block" href="contact.html">Get Free Quote</a>
+        <button class="theme-toggler" type="button" aria-label="Switch to light theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-starting">
+          <button class="btn btn-light">Contact</button>
+          <h2>Get in Touch</h2>
+          <p>Ready for a cleaner space? Book your cleaning or ask us a question.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-lg-6 contact-form-col p-5">
+            <form action="" class="contact-form">
+              <div class="row g-4">
+                <div class="col">
+                  <label for="fullName">Full Name</label><br />
+                  <input type="text" placeholder="Your Name" id="fullName" />
+                </div>
+                <div class="col">
+                  <label for="email">Email Address</label><br />
+                  <input type="email" placeholder="Your Email Address" id="email" />
+                </div>
+              </div>
+              <div class="row g-4">
+                <div class="col">
+                  <label for="phone">Phone Number</label><br />
+                  <input type="text" placeholder="Your Contact Number" id="phone" />
+                </div>
+                <div class="col">
+                  <label for="service">Select Service Needed</label><br />
+                  <select id="service">
+                    <option value="select">Select a Service</option>
+                    <option value="regular">Regular Cleaning</option>
+                    <option value="deep">Deep Cleaning</option>
+                    <option value="move">Move-In/Out</option>
+                    <option value="commercial">Commercial</option>
+                  </select>
+                </div>
+              </div>
+              <label for="date">Preferred Date</label><br />
+              <input type="date" id="date" />
+              <br />
+              <label for="message">Message</label><br />
+              <input type="text" placeholder="Message" id="message" /><br />
+              <button class="btn w-100 my-3">Request Cleaning</button>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6 contact-info-col">
+            <div class="p-4 p-md-5">
+              <h4>Contact Information</h4>
+              <p class="mb-4">
+                Reach us directly for booking, questions, or custom cleaning plans.
+              </p>
+              <div class="row g-3 contact-info-list">
+                <div class="col-12">
+                  <div class="contact-info-item d-flex align-items-start">
+                    <span class="contact-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <div>
+                      <h6 class="mb-1">Phone</h6>
+                      <a href="tel:+923000000000">+92 300 0000000</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="contact-info-item d-flex align-items-start">
+                    <span class="contact-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <div>
+                      <h6 class="mb-1">Email</h6>
+                      <a href="mailto:hello@sparkleclean.com">hello@sparkleclean.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="contact-info-item d-flex align-items-start">
+                    <span class="contact-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <div>
+                      <h6 class="mb-1">Location</h6>
+                      <p class="mb-0">Main Boulevard, Gulberg, Lahore, Pakistan</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid footer">
+      <span class="flex justify-content-center m-3">&copy; 2026 awaisdaud.com. All rights reserved.</span>
+    </div>
+
+    <script src="../css/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

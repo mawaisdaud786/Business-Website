@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <!-- Sparkle Icon -->
+  <path d="M16 4l2 6L24 12l-6 2-2 6-2-6-6-2 6-2 2-6z" fill="#5EEAD4"/>
+  <path d="M26 16l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z" fill="#5EEAD4" opacity="0.6"/>
+  <!-- Text -->
+  <text x="36" y="20" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">
+    <tspan>Sparkle</tspan><tspan fill="#5EEAD4">Clean</tspan>
+  </text>
+  <text x="36" y="32" font-family="Inter, system-ui, sans-serif" font-size="8" font-weight="500" fill="#D1D5DB" letter-spacing="1.5">PRO</text>
+</svg>
